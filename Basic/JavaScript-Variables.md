@@ -10,6 +10,7 @@ JavaScript provides three ways:
 - const
 
 ⭐ let Variable
+
 ` let ` is block-scoped variable declaration keyword introduced in ES6 that allows reassignment but prevents redeclaration within the same scope.
 
 ```
@@ -85,3 +86,11 @@ let b = 10;
 - Must start with letter, `_` or `$`
 - Cannot start with number
 - Cannot use reserved keywords
+
+
+```
+let userName;
+let _count;
+let $price; 
+
+```
