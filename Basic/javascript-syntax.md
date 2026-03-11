@@ -14,13 +14,8 @@ greet();
 ```
 
 Things to notice:
-
--let → variable declaration keyword
-
--= → assignment operator
-
--function → function declaration
-
--{} → code block
-
--; → statement terminator (optional but recommended)
+- let → variable declaration keyword
+- = → assignment operator
+- function → function declaration
+- {} → code block
+- ; → statement terminator (optional but recommended)
