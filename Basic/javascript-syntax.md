@@ -19,3 +19,26 @@ Things to notice:
 - function → function declaration
 - {} → code block
 - ; → statement terminator (optional but recommended)
+
+
+Comments Syntax
+
+- Single Line
+
+```
+
+// this is comment
+
+```
+
+- Multi Line
+
+``` 
+
+/*
+multi
+line
+comment
+*/
+
+```
