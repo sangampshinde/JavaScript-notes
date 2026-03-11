@@ -1,16 +1,16 @@
 # JavaScript Variables
 
-- A variable in JavaScript is a named container used to store data values in memory so that they can be accessed, modified, and reused throughout the execution of a program.
+A variable in JavaScript is a named container used to store data values in memory so that they can be accessed, modified, and reused throughout the execution of a program.
 
-- Variable means a box where we store value.
+Variable means a box where we store value.
 
 JavaScript provides three ways:
 - var
 - let
 - const
 
-## let Variable
-- ``` let ``` is block-scoped variable declaration keyword introduced in ES6 that allows reassignment but prevents redeclaration within the same scope.
+⭐ let Variable
+` let ` is block-scoped variable declaration keyword introduced in ES6 that allows reassignment but prevents redeclaration within the same scope.
 
 ```
 let age = 25;
