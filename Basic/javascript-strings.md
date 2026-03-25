@@ -343,6 +343,79 @@ console.log(str.indexOf("z"));
 
 ```
 
+
+`lastIndexOf()`
+
+method to get the index or position of the last occurrence of the specified string within a string, 
+
+```
+let str = "If the facts don't fit the theory, change the facts.";
+let pos = str.lastIndexOf("facts");
+alert(pos); // 0utputs: 46
+
+```
+
+
+methods also accept an optional integer parameter which specifies the position within the string at which to start the search.
+
+```
+let str = "If the facts don't fit the theory, change the facts.";
+ 
+// Searching forwards
+let pos1 = str.indexOf("facts", 20);
+alert(pos1); // 0utputs: 46
+ 
+// Searching backwards
+let pos2 = str.lastIndexOf("facts", 20);
+alert(pos2); // 0utputs: 7
+
+```
+
+Accessing Individual Characters from a String
+
+You can use the `charAt()` method to access individual character from a string, like 
+
+`str.charAt(index)`
+
+
+```
+
+let str = "Hello World!";
+document.write(str.charAt());  // Prints: H
+document.write(str.charAt(6)); // Prints: W
+document.write(str.charAt(30)); // Prints nothing
+document.write(str.charAt(str.length - 1)); // Prints: !
+
+```
+
+
+Searching for a Pattern Inside a String
+
+You can use the `search()` method to search a particular piece of text or pattern inside a string.
+
+```
+
+let str = "Color red looks brighter than color blue.";
+ 
+// Case sensitive search
+let pos1 = str.search("color");
+alert(pos1); // 0utputs: 30
+ 
+// Case insensitive search using regexp
+let pos2 = str.search(/color/i);
+alert(pos2); // 0utputs: 0
+
+```
+
+
+
+
+
+
+
+
+
+
 8. `slice()`
 
 Used to get part of a string.
@@ -359,9 +432,35 @@ Java
 
 ```
 
+Extracting a Fixed Number of Characters from a String
+JavaScript also provide the `substr()` method which is similar to `slice()` with a subtle difference, the second parameter specifies the number of characters to extract instead of ending index
+
+`str.substr(startIndex, length)`
+
+example:
+
+```
+let str = "The quick brown fox jumps over the lazy dog.";
+document.write(str.substr(4, 15)); // Prints: quick brown fox
+document.write(str.substr(-28, -19)); // Prints nothing
+document.write(str.substr(-28, 9)); // Prints: fox jumps
+document.write(str.substr(31)); // Prints: the lazy dog.
+
+```
+
+
+
+
+
+
+
 9. `replace()`
 
 Replace part of string.
+
+
+`str.replace(regexp|substr, newSubstr)`.
+
 
 ```
 let str = "I love Java";
@@ -479,4 +578,3 @@ console.log(typeof result); // string
 
  ```
 
- 
